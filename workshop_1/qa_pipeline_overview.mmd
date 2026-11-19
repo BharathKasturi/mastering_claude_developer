@@ -1,0 +1,31 @@
+flowchart TB
+    subgraph SETUP["🧪 QA · the clean room"]
+        direction LR
+        B0["🧹 0 · copy the repo<br/>git init · commit baseline"] --> B1["▶️ 0 · run the legacy suite<br/>📎 baseline = GREEN"]
+    end
+    subgraph DEV["👨‍💻 Developer"]
+        direction LR
+        T["🎟️ 1 · ticket + branch"] --> F["🔨 2 · feature<br/>data · planner · catalog"]
+        F --> C["📝 3 · commit message<br/>claude -p · no tools"]
+    end
+    subgraph QA["🧪 QA Lead"]
+        direction LR
+        P["🗺️ 4 · test plan<br/>claude -p · Read,Grep,Glob"] --> W["✍️ 5 · test cases<br/>claude -p · Read,Write"]
+        W --> R["🔴 6 · first run<br/>pytest → RED"]
+        R --> D["🐞 7 · defect report<br/>claude -p · severity"]
+    end
+    subgraph FIX["👨‍💻 DEV fixes → 🧪 QA verifies"]
+        direction LR
+        X["🔧 8 · fix the root cause<br/>claude -p · Read,Edit"] --> G["🟢 9 · re-run<br/>GREEN + regression"]
+        G --> M["🧬 10 · mutation<br/>grade the tests"]
+    end
+    subgraph SHIP["🤝 Sign-off"]
+        direction LR
+        S["🛡️ 11 · security review<br/>claude -p · blockers = 0"] --> PR["📬 12 · PR + evidence<br/>claude -p"]
+        PR --> A["🤝 13 · approve + merge<br/>a person signs"]
+        A --> CI["⚙️ 14 · CI runs<br/>the same gates"]
+    end
+    SETUP --> DEV
+    DEV --> QA
+    QA --> FIX
+    FIX --> SHIP

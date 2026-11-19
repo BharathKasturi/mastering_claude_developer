@@ -1,0 +1,227 @@
+[
+ {
+  "n": 1,
+  "skill": "1.1",
+  "weight": 3.1,
+  "title": "Claude Code Operation: Rules, Skills, Commands, Agents, Memory, Headless, Auto-mode",
+  "statement": "Operate Claude Code core components (Rules, Skills, Commands, Agents, Agent Memory), features (session management, built-in and custom slash commands, headless mode, streaming mode, auto-mode), the CLAUDE.md hierarchy, repository initialization, and settings.json configuration.",
+  "mode": "cli",
+  "file": "01_claude_code_operation"
+ },
+ {
+  "n": 2,
+  "skill": "2.1",
+  "weight": 3.8,
+  "title": "Context Engineering: Window Management, Drift & Bloat, Compaction, Isolation",
+  "statement": "Apply context and memory management techniques for Claude applications, including context window management, prevention of context drift and bloat (tool output pruning, compaction), and context isolation through subagents or multi-step agentic workflows.",
+  "mode": "api",
+  "file": "02_context_engineering"
+ },
+ {
+  "n": 3,
+  "skill": "2.2",
+  "weight": 4.6,
+  "title": "Prompt Engineering: Clarity, Few-shot, System vs User, Constraints, Iteration, Sanitization",
+  "statement": "Apply prompt engineering principles and methods (instruction clarity, few-shot examples, system versus user placement, output constraints, prompt and instruction placement across components, iterative refinement, prompt adjustment, input sanitization) when writing and iterating on prompts for Claude.",
+  "mode": "api",
+  "file": "03_prompt_engineering"
+ },
+ {
+  "n": 4,
+  "skill": "2.3",
+  "weight": 2.6,
+  "title": "Output Handling: Structured Output, Validation, Defensive Parsing, Skepticism",
+  "statement": "Apply established patterns and techniques for producing, validating, and consuming Claude output, including structured output patterns, response validation, defensive parsing, and skepticism toward confident output.",
+  "mode": "api",
+  "file": "04_output_handling"
+ },
+ {
+  "n": 5,
+  "skill": "3.1",
+  "weight": 5.2,
+  "title": "LLM Fundamentals: Tokens, Context, Sampling, Thinking Modes, Effort, Shot Prompting",
+  "statement": "Explain LLM basics (tokens, context windows, sampling, non-determinism, next-token generation), model options (fast mode, extended thinking, adaptive thinking, effort levels), and fundamental prompting techniques (zero-shot, single-shot, multi-shot).",
+  "mode": "api",
+  "file": "05_llm_fundamentals"
+ },
+ {
+  "n": 6,
+  "skill": "3.2",
+  "weight": 6.1,
+  "title": "Technical Fundamentals: SDKs over REST, Websockets",
+  "statement": "Apply foundational technical concepts supporting AI application development, including basic engineering practices (integrating with SDKs that wrap REST APIs, websockets).",
+  "mode": "api",
+  "file": "06_technical_fundamentals"
+ },
+ {
+  "n": 7,
+  "skill": "3.3",
+  "weight": 2.7,
+  "title": "Model Selection & Tradeoffs: Opus / Sonnet / Haiku, Quality-Latency-Cost, Release Changes",
+  "statement": "Select models by comparing Claude model capabilities (Opus vs. Sonnet vs. Haiku use cases, adaptive thinking support), tradeoffs across quality/latency/cost parameters, and breaking behavior changes across model releases.",
+  "mode": "api",
+  "file": "07_model_selection_tradeoffs"
+ },
+ {
+  "n": 8,
+  "skill": "3.4",
+  "weight": 2.8,
+  "title": "Cost & Token Management: Usage Tracking, Cost Modelling, Prompt Caching",
+  "statement": "Apply token budgeting and cost management techniques for Claude applications, including token usage tracking, cost modeling, and caching techniques (prompt caching, cache check-pointing) for cost optimization.",
+  "mode": "api",
+  "file": "08_cost_token_management"
+ },
+ {
+  "n": 9,
+  "skill": "4.1",
+  "weight": 3.4,
+  "title": "Understanding Requirements: Functional & Infrastructure",
+  "statement": "Derive functional and infrastructure requirements from business requirements and solution architecture.",
+  "mode": "api",
+  "file": "09_understanding_requirements"
+ },
+ {
+  "n": 10,
+  "skill": "4.2",
+  "weight": 2.8,
+  "title": "Systems Life Cycle for Claude Applications",
+  "statement": "Apply systems life cycle management concepts and frameworks used to develop, implement, operate, and maintain IT systems.",
+  "mode": "api",
+  "file": "10_systems_life_cycle_for_claude_applications"
+ },
+ {
+  "n": 11,
+  "skill": "4.3",
+  "weight": 6.8,
+  "title": "Claude API Mechanics: Messages, Tools, Streaming, Vision, Thinking, Caching, Batch",
+  "statement": "Apply Claude API behavior and mechanics, including messages, tools, streaming, vision, thinking, caching, invoking Claude through third-party vendors, Messages API data access patterns, batch API use, and tradeoffs between realtime and batch API selection.",
+  "mode": "api",
+  "file": "11_claude_api_mechanics"
+ },
+ {
+  "n": 12,
+  "skill": "4.4",
+  "weight": 7.4,
+  "title": "Software Engineering Foundations: REST, JSON, Async, Git, SDLC, Refactoring",
+  "statement": "Apply core software engineering principles and practices, including REST APIs, JSON, asynchronous programming, version control, SDLC integration, code review, and small- and large-scale refactoring.",
+  "mode": "api",
+  "file": "12_software_engineering_foundations"
+ },
+ {
+  "n": 13,
+  "skill": "4.5",
+  "weight": 8.6,
+  "title": "Claude Application Design: Interfaces, Content Boundaries, Schemas, Session Hygiene, Plugins",
+  "statement": "Apply design considerations for building Claude applications, including how Claude interprets instructions across interfaces (Claude Code, Desktop, claude.ai, API, SDKs), content boundaries, schema design, session hygiene, and plugin management.",
+  "mode": "api",
+  "file": "13_claude_application_design"
+ },
+ {
+  "n": 14,
+  "skill": "4.6",
+  "weight": 4.1,
+  "title": "Configuration Management: CLAUDE.md, settings.json, Model Pinning, Prompt Versioning",
+  "statement": "Manage configuration for Claude system components, including CLAUDE.md files, settings.json, model version pinning, prompt versioning, and plugin dependencies.",
+  "mode": "cli",
+  "file": "14_configuration_management"
+ },
+ {
+  "n": 15,
+  "skill": "5.1",
+  "weight": 2.6,
+  "title": "Debugging & Error Handling: Error Types, Recovery, Trace Analysis, Origin Isolation",
+  "statement": "Apply debugging and error handling techniques for Claude applications, including error type identification, recovery strategy selection, trace analysis to identify failure modes, and problem origin isolation between the integration layer and model output.",
+  "mode": "api",
+  "file": "15_debugging_error_handling"
+ },
+ {
+  "n": 16,
+  "skill": "6.1",
+  "weight": 4.4,
+  "title": "Tool Implementation: Schemas, Descriptions, Errors, Dispatch & Approval Patterns",
+  "statement": "Implement tools for Claude applications, including tool use and function calling, configuration for external system interaction, tool description writing, error handling, tool usage patterns (agentic harness dispatch, client-side vs. server-side tools, approval patterns), and tool set construction best practices.",
+  "mode": "api",
+  "file": "16_tool_implementation"
+ },
+ {
+  "n": 17,
+  "skill": "6.2",
+  "weight": 2.1,
+  "title": "MCP Server Development: Resources, Tools, Prompts, stdio vs Sockets",
+  "statement": "Develop MCP servers, including server authoring, deployment, integration with Claude applications, MCP resources, tools, and prompts, and communication patterns (stdio, sockets, client vs. server).",
+  "mode": "cli",
+  "file": "17_mcp_server_development"
+ },
+ {
+  "n": 18,
+  "skill": "6.3",
+  "weight": 4.1,
+  "title": "Agentic Customization: Built-in Tools vs Custom Tools vs Skills vs MCPs",
+  "statement": "Evaluate tradeoffs among built-in Tools, custom Tools, Skills, and MCPs for selecting and applying the appropriate approach for a given use case.",
+  "mode": "cli",
+  "file": "18_agentic_customization"
+ },
+ {
+  "n": 19,
+  "skill": "7.1",
+  "weight": 3.2,
+  "title": "AI Application Security: Prompt Injection, Jailbreaks, Untrusted Input, PII, Leakage",
+  "statement": "Apply data privacy and security best practices, including prompt injection awareness and mitigation, jailbreak defense, untrusted input handling, data leakage prevention, PII handling, and ensuring authentication, authorization, confidentiality, privacy, and integrity.",
+  "mode": "api",
+  "file": "19_ai_application_security"
+ },
+ {
+  "n": 20,
+  "skill": "7.2",
+  "weight": 2.3,
+  "title": "Guardrails & Safe Deployment: Content Policy, Layering, Least Privilege",
+  "statement": "Apply safe and responsible deployment practices (content policy, guardrail layering) and secure-by-design principles (privacy, identity and access management, least privilege).",
+  "mode": "both",
+  "file": "20_guardrails_safe_deployment"
+ },
+ {
+  "n": 21,
+  "skill": "7.3",
+  "weight": 1.0,
+  "title": "Claude Hooks as Guardrails Against Destructive Actions",
+  "statement": "Leverage hooks for guardrails and safety controls to prevent destructive actions within Claude applications.",
+  "mode": "cli",
+  "file": "21_claude_hooks_as_guardrails_against_destructive_actions"
+ },
+ {
+  "n": 22,
+  "skill": "7.4",
+  "weight": 1.6,
+  "title": "Identity, Secrets & Key Management Across Environments",
+  "statement": "Manage secrets, credentials, and API keys across Claude development and production environments, including identity validation and authentication, access approval and level verification, and authorized access monitoring.",
+  "mode": "both",
+  "file": "22_identity_secrets_key_management_across_environments"
+ },
+ {
+  "n": 23,
+  "skill": "8.1",
+  "weight": 4.5,
+  "title": "Agent Architecture: Workflow vs Agent, Supervisors, Subagents",
+  "statement": "Apply the principles, patterns, and tradeoffs of agent and workflow architecture, including the decision criteria for using a workflow versus an agent, the structure of manager/supervisor hierarchies, and the role of subagents in improving task execution.",
+  "mode": "api",
+  "file": "23_agent_architecture"
+ },
+ {
+  "n": 24,
+  "skill": "8.2",
+  "weight": 5.3,
+  "title": "Agent Construction: Agent SDK, Custom Loops, Managed Agents, Hooks",
+  "statement": "Construct Claude agents using the Claude Agent SDK, custom agent loops and harnesses, managed agent deployment models (self-hosted vs. Anthropic-hosted), and hooks for deterministic actions.",
+  "mode": "both",
+  "file": "24_agent_construction"
+ },
+ {
+  "n": 25,
+  "skill": "8.3",
+  "weight": 4.9,
+  "title": "Agent Patterns & Frameworks: Tool Loops, Memory, Strands / LangGraph / PydanticAI",
+  "statement": "Apply common agent design patterns (tool-use loops, sub-agents, memory, context-window management) and agentic abstraction frameworks (e.g., Strands, LangGraph, PydanticAI) to build agents and workflows for multi-step tasks.",
+  "mode": "api",
+  "file": "25_agent_patterns_frameworks"
+ }
+]
